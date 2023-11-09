@@ -7,6 +7,30 @@ body{
   align-items: center;
   justify-content: center;
 }
+button{
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  left: 100px;
+  top: 100px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  text-align: center;
+  transition: 1s;
+  color: #fff;
+}
+
+.active{
+  /*border: solid 3px #f1fc62;
+  border-color: #f1fc62;
+  -webkit-box-shadow: 0px 0px 31px 21px rgba(229, 243, 46, 0.31);
+-moz-box-shadow: 0px 0px 31px 21px rgba(229, 243, 46, 0.31);
+box-shadow: 0px 0px 31px 21px rgba(229, 243, 46, 0.31);*/
+top: 200px;
+}
+
 .container{
   position: relative;
   margin: 200px auto;
@@ -22,16 +46,16 @@ body{
   height: inherit;
   transform-style: preserve-3d;
   transform: rotate3d(1, 1, 1, 49deg);
-  animation-name: rotation ;
+  /*animation-name: rotation ;
   animation-duration: 30s;
   animation-iteration-count: infinite;
-  /*animation-name: box-shafow;*/
+  animation-name: box-shafow;*/
 
 }
-@keyframes rotation{
+/*@keyframes rotation{
 	from{  transform: rotate3d(1, 1, 1, 0deg);  }
 	to{  transform: rotate3d(1, 1, 1, 360deg);}
-}
+}*/
 .sides{
   position: absolute;
   width: inherit;
@@ -78,9 +102,9 @@ body{
     box-shadow: 0px 0px 42px 21px rgb(19, 19, 170) inset;
   }
   50%{
-    -webkit-box-shadow: 0px 0px 42px 21px rgb(19, 19, 170) inset;
-    -moz-box-shadow: 0px 0px 42px 21px rgb(19, 19, 170) inset;
-    box-shadow: 0px 0px 42px 21px rgb(19, 19, 170) inset;
+    -webkit-box-shadow: 0px 0px 42px 21px rgb(70, 70, 125) inset;
+    -moz-box-shadow: 0px 0px 42px 21px rgb(70, 70, 125) inset;
+    box-shadow: 0px 0px 42px 21px rgb(70, 70, 125) inset;
   }
   50%{
     -webkit-box-shadow: 0px 0px 42px 21px rgb(99, 59, 99) inset;
